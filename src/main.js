@@ -3,12 +3,20 @@
 import { fetchPokemon } from "./services/api.js";
 import { showPokemon, closeModal } from "./ui/ui.js";
 
-let current = 25; // Pikachu por defecto
+let current = 1; 
 
 async function loadPokemon(id) {
   const pokemon = await fetchPokemon(id);
   showPokemon(pokemon);
 }
+// El navegador requiere una interacción antes de reproducir audio
+// Este código espera el primer clic del usuario para iniciar la música
+const music = document.getElementById("bg-music");
+music.volume = 0.4; // Volumen al 40%
+
+document.addEventListener("click", () => {
+  if (music.paused) music.play();
+}, { once: true }); // { once: true } = solo se ejecuta la primera vez
 
 // Carga inicial
 loadPokemon(current);

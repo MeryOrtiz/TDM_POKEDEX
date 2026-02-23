@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TDM Pokédex</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
+</head>
+<body>
+
+  <div class="bg-decoration">
+    <div class="pokeball-bg"></div>
+  </div>
+
+  <main class="app-container">
+
+    <h1 class="app-title">Pokédex</h1>
+
+    <div class="pokemon-card">
+
+      <p id="pokemon-id" class="pokemon-id-top">#025</p>
+
+      <div class="img-wrapper">
+        <img id="pokemon-img" src="" alt="Pokémon" />
+      </div>
+
+      <h1 id="pokemon-name" class="pokemon-name">Cargando...</h1>
+
+      <div class="types" id="types"></div>
+
+      <div class="nav-buttons">
+        <button class="btn prev">&#8592; Anterior</button>
+        <button class="btn next">Siguiente &#8594;</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+
+      <span id="close-modal" class="close-modal">&times;</span>
+
+      <h2 id="modal-name" class="modal-name"></h2>
+
+      <img id="modal-img" src="" alt="pokemon grande" class="modal-img" />
+
+      <p id="modal-id" class="pokemon-id"></p>
+
+      <div class="modal-info">
+        <p><strong>Altura:</strong> <span id="modal-height"></span> m</p>
+        <p><strong>Peso:</strong> <span id="modal-weight"></span> kg</p>
+        <p><strong>Habilidades:</strong> <span id="modal-abilities"></span></p>
+      </div>
+
+      <div id="modal-stats" class="modal-stats"></div>
+
+    </div>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,3 @@
-// main.js — Lógica principal de la aplicación
-
 import { fetchPokemon } from "./services/api.js";
 import { showPokemon, closeModal } from "./ui/ui.js";
 
@@ -16,7 +14,7 @@ music.volume = 0.4; // Volumen al 40%
 
 document.addEventListener("click", () => {
   if (music.paused) music.play();
-}, { once: true }); // { once: true } = solo se ejecuta la primera vez
+}, { once: true }); //  solo se ejecuta la primera vez
 
 // Carga inicial
 loadPokemon(current);

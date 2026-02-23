@@ -51,6 +51,13 @@ export function showModal(pokemon) {
       <span class="stat-value">${s.base}</span>
     `;
     statsDiv.appendChild(row);
+    row.innerHTML = `
+  <span>${capitalize(s.stat.replace("-", " "))}</span>
+  <div class="stat-bar-bg">
+    <div class="stat-bar-fill" style="width: ${percent}%"></div>
+  </div>
+  <span class="stat-value">${s.base} / 255</span>
+`;
   });
 
   document.getElementById("pokemon-modal").classList.remove("hidden");

@@ -32,8 +32,8 @@
       <div class="types" id="types"></div>
 
       <div class="nav-buttons">
-        <button class="btn prev"> ← Anterior</button>
-        <button class="btn next">Siguiente →</button>
+        <button class="btn prev"> ← </button>
+        <button class="btn next"> →</button>
       </div>
 
     </div>
@@ -41,27 +41,31 @@
   </main>
 
   <div id="pokemon-modal" class="modal hidden">
-    <div class="modal-content">
 
-      <span id="close-modal" class="close-modal">&times;</span>
+  <span id="close-modal" class="close-modal">&times;</span>
 
+  <div class="modal-content">
+
+   
+    <div class="modal-left">
       <h2 id="modal-name" class="modal-name"></h2>
-
       <img id="modal-img" src="" alt="pokemon grande" class="modal-img" />
-
       <p id="modal-id" class="pokemon-id"></p>
+    </div>
 
+   
+    <div class="modal-right">
       <div class="modal-info">
         <p><strong>Altura:</strong> <span id="modal-height"></span> m</p>
         <p><strong>Peso:</strong> <span id="modal-weight"></span> kg</p>
         <p><strong>Habilidades:</strong> <span id="modal-abilities"></span></p>
       </div>
-
       <div id="modal-stats" class="modal-stats"></div>
-
     </div>
+
   </div>
 
+</div>
   <div id="modal-overlay" class="modal-overlay hidden"></div>
 
   <script type="module" src="./src/main.js"></script>

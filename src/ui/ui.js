@@ -1,4 +1,4 @@
-// ui.js — Lógica de visualización
+// Lógica de visualización
 
 function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);

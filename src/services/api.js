@@ -1,4 +1,4 @@
-// api.js — Conexión con la PokéAPI
+//Conexión con la PokéAPI
 
 import Pokemon from "../models/Pokemon.js";
 
